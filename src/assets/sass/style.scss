@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+// setting
+@use "setting/vars";
+@use "setting/resets";
+@use "setting/common";
+
+// section
+@use "section/section";
+@use "section/hackathon";
+@use "section/home";
+
+@use "people/people";
+@use "result/result";
+
+//recruit
+@use "recruit/recruithome";
+@use "recruit/recruitapply";
+
+
+@use "section/homem"; //home 모바일 버전

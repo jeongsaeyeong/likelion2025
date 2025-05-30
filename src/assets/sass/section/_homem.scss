@@ -1,0 +1,120 @@
+.home_wrap_m {
+    height: 3000px;
+    background: linear-gradient(179.99deg, var(--black) 0%, #4E4D70 100%);
+
+    .home_mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 193px;
+            position: relative;
+
+            img {
+                height: 276px;
+                width: inherit;
+                animation: float 3s ease-in-out infinite;
+            }
+
+        }
+
+        .follow_line {
+            position: absolute;
+            right: calc(50% - 20px);
+            z-index: 0;
+
+        }
+
+        .line {
+            width: 3px;
+
+            background-image: linear-gradient(180deg, #FFFFFF, #5D5D5D4D);
+        }
+
+        .container {
+            margin-top: 255px;
+            height: 1800px;
+            position: relative;
+
+            .title {
+                margin-top: 250px;
+                padding: 40px 0;
+
+                p {
+                    font-size: 37px;
+                    font-weight: 900;
+                    background: linear-gradient(179.99deg, #FFFFFF 0%, #A7B2F8 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    -webkit-text-fill-color: transparent;
+                    line-height: 150%;
+                }
+
+            }
+
+            .mid {
+                margin-top: 336px;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+
+
+                .sc {
+                    color: var(--white);
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 150%;
+                    text-align: center;
+                    margin: 50px 0;
+
+                    .purple {
+                        color: var(--pur03);
+                        display: inline;
+                    }
+                }
+            }
+
+            .bottom_wrap {
+                text-align: center;
+                margin-top: 470px;
+
+
+                .purple {
+                    color: var(--pur02);
+                    font-size: 40px;
+                    font-weight: 900;
+                }
+
+                p {
+                    color: var(--white);
+                    font-size: 40px;
+                    font-weight: 600;
+                    margin-top: 60px;
+                }
+
+                .grad {
+                    font-size: 50px;
+                    font-weight: 600;
+                    background: var(--grad03);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    -webkit-text-fill-color: transparent;
+                    line-height: 150%;
+
+                }
+
+            }
+
+        }
+
+
+    }
+}

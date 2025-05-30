@@ -1,0 +1,165 @@
+.result-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+
+  .form-box {
+    margin-top: 144px;
+    width: 418px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-label {
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    color: var(--pur02);
+    font-family: var(--mainfont);
+  }
+
+  .form-input {
+    width: 100%;
+    height: 35px;
+    padding: 4px 20px;
+    border: 2px solid var(--pur02);
+    border-radius: 30px;
+    background: var(--white);
+    font-size: 18px;
+    font-family: var(--mainfont);
+    color: var(--gray04);
+  }
+
+  .submit-button {
+    margin-top: 96px;
+    width: 417px;
+    padding: 10px;
+    border: none;
+    border-radius: 14px;
+    background: var(--pur03);
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--mainfont);
+    cursor: pointer;
+  }
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  width: 618px;
+  padding: 74px 36px 36px;
+  background: var(--white);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  text-align: center;
+
+  .popup-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--black);
+    font-family: var(--mainfont);
+  }
+
+  .popup-desc {
+    margin-top: 12px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--gray04);
+    font-family: var(--mainfont);
+    line-height: 1.5;
+  }
+
+  .popup-confirm {
+    margin-top: 20px;
+    width: 544px;
+    height: 82px;
+    border: none;
+    border-radius: 18px;
+    background: var(--pur03);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--mainfont);
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1000px) {
+  .result-form {
+    background: linear-gradient(180deg, #020202 0%, #4E4D70 100%);
+    .form-box {
+      width: 340px;
+      padding: 20px;
+      border: 2px solid var(--pur02);
+      border-radius: 30px;
+    }
+
+    .form-input {
+      height: 50px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .form-label {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    .submit-button {
+      width: 340px;
+      height: 50px;
+      font-size: 18px;
+      margin-top: 30px;
+      margin-bottom: 186px;
+    }
+  }
+
+  .popup {
+    width: 300px;
+    height: 200px;
+    padding: 24px 20px;
+    border-radius: 20px;
+
+    .popup-title {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .popup-desc {
+      font-size: 14px;
+      line-height: 19px;
+      color: #818181;
+    }
+
+    .popup-confirm {
+      width: 125px;
+      height: 40px;
+      font-size: 14px;
+      border-radius: 10px;
+    }
+  }
+}
