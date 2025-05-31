@@ -8,6 +8,9 @@
     background-color: var(--black);
     position: fixed;
     top: 0;
+    &.bgc_none{
+        background-color: #ffffff00;
+    }
 
     >a {
         img {
