@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import Logo from '../../assets/img/section/logo_nav.svg'
 import Ham from '../../assets/img/section/hamberger.svg'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const Nav = ({ thisW }) => {
     const [none, setNone] = useState('none');
+    const location = useLocation();
+    const isRoot = location.pathname === '/'
 
     const onOff = () => {
         if (none === 'none') {
@@ -17,7 +19,7 @@ const Nav = ({ thisW }) => {
     return (
         <>
             {thisW > 1000 ? (
-                <div className='Nav_wrap_w'>
+                <div className={`Nav_wrap_w ${isRoot ? 'bgc_none' : ''}`}>
                     <Link to='/'>
                         <img src={Logo} alt="logo img" />
                     </Link>
